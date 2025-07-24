@@ -1,0 +1,182 @@
+{
+  "감자샐러드": {
+    "description": "감자, 마요네즈, 계란으로 만든 기본 감자샐러드",
+    "base_weight": 100,
+    "compositions": [
+      {
+        "ingredient_name": "감자",
+        "percentage": 60.0,
+        "unit": "g",
+        "preparation": "삶은 감자"
+      },
+      {
+        "ingredient_name": "마요네즈",
+        "percentage": 25.0,
+        "unit": "g",
+        "preparation": "생것"
+      },
+      {
+        "ingredient_name": "계란",
+        "percentage": 15.0,
+        "unit": "g",
+        "preparation": "삶은 계란"
+      }
+    ]
+  },
+  "야채샐러드": {
+    "description": "양파, 당근, 마요네즈를 활용한 기본 야채샐러드",
+    "base_weight": 100,
+    "compositions": [
+      {
+        "ingredient_name": "양파",
+        "percentage": 40.0,
+        "unit": "g",
+        "preparation": "생것"
+      },
+      {
+        "ingredient_name": "당근",
+        "percentage": 35.0,
+        "unit": "g",
+        "preparation": "생것"
+      },
+      {
+        "ingredient_name": "마요네즈",
+        "percentage": 25.0,
+        "unit": "g",
+        "preparation": "생것"
+      }
+    ]
+  },
+  "계란프라이": {
+    "description": "기름에 구운 계란",
+    "base_weight": 100,
+    "compositions": [
+      {
+        "ingredient_name": "계란",
+        "percentage": 90.0,
+        "unit": "g",
+        "preparation": "생것"
+      }
+    ]
+  },
+  "감자튀김": {
+    "description": "기름에 튀긴 감자",
+    "base_weight": 100,
+    "compositions": [
+      {
+        "ingredient_name": "감자",
+        "percentage": 100.0,
+        "unit": "g",
+        "preparation": "생것"
+      }
+    ]
+  },
+  "감자전": {
+    "description": "감자를 갈아서 만든 전",
+    "base_weight": 100,
+    "compositions": [
+      {
+        "ingredient_name": "감자",
+        "percentage": 80.0,
+        "unit": "g",
+        "preparation": "생것"
+      },
+      {
+        "ingredient_name": "계란",
+        "percentage": 15.0,
+        "unit": "g",
+        "preparation": "생것"
+      }
+    ]
+  },
+  "양파볶음": {
+    "description": "기름에 볶은 양파",
+    "base_weight": 100,
+    "compositions": [
+      {
+        "ingredient_name": "양파",
+        "percentage": 100.0,
+        "unit": "g",
+        "preparation": "생것"
+      }
+    ]
+  },
+  "당근볶음": {
+    "description": "기름에 볶은 당근",
+    "base_weight": 100,
+    "compositions": [
+      {
+        "ingredient_name": "당근",
+        "percentage": 100.0,
+        "unit": "g",
+        "preparation": "생것"
+      }
+    ]
+  },
+  "스크램블에그": {
+    "description": "계란으로 만든 스크램블",
+    "base_weight": 100,
+    "compositions": [
+      {
+        "ingredient_name": "계란",
+        "percentage": 100.0,
+        "unit": "g",
+        "preparation": "생것"
+      }
+    ]
+  },
+  "오믈렛": {
+    "description": "계란과 야채로 만든 오믈렛",
+    "base_weight": 100,
+    "compositions": [
+      {
+        "ingredient_name": "계란",
+        "percentage": 70.0,
+        "unit": "g",
+        "preparation": "생것"
+      },
+      {
+        "ingredient_name": "양파",
+        "percentage": 20.0,
+        "unit": "g",
+        "preparation": "생것"
+      },
+      {
+        "ingredient_name": "당근",
+        "percentage": 10.0,
+        "unit": "g",
+        "preparation": "생것"
+      }
+    ]
+  },
+  "샐러드": {
+    "description": "기본 혼합 샐러드",
+    "base_weight": 100,
+    "compositions": [
+      {
+        "ingredient_name": "양파",
+        "percentage": 30.0,
+        "unit": "g",
+        "preparation": "생것"
+      },
+      {
+        "ingredient_name": "당근",
+        "percentage": 30.0,
+        "unit": "g",
+        "preparation": "생것"
+      },
+      {
+        "ingredient_name": "감자",
+        "percentage": 25.0,
+        "unit": "g",
+        "preparation": "삶은 감자"
+      },
+      {
+        "ingredient_name": "마요네즈",
+        "percentage": 15.0,
+        "unit": "g",
+        "preparation": "생것"
+      }
+    ]
+  }
+}
