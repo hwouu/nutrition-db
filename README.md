@@ -52,44 +52,44 @@
 ## 🚀 빠른 시작
 
 ### 1. 저장소 클론
-\`\`\`bash
-git clone <repository-url>
+```bash
+git clone https://github.com/hwouu/nutrition-db.git
 cd nutrition-db
-\`\`\`
+```
 
 ### 2. 백엔드 설정
-\`\`\`bash
+```bash
 # Python 가상환경 생성 및 활성화
 python3 -m venv venv
 source venv/bin/activate  # macOS/Linux
-# 또는 venv\\Scripts\\activate  # Windows
+# 또는 venv\Scripts\activate  # Windows
 
 # 의존성 설치
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 3. 프론트엔드 설정
-\`\`\`bash
+```bash
 cd frontend
 npm install
-\`\`\`
+```
 
 ### 4. 환경변수 설정
-\`\`\`bash
+```bash
 # 백엔드 환경변수 (.env 파일이 이미 설정됨)
 # 실제 공공데이터 API 키가 있다면 .env 파일에서 SERVICE_KEY 수정
 # 현재는 Mock 데이터 모드로 설정됨 (USE_MOCK_DATA=true)
-\`\`\`
+```
 
 ### 5. 개발 서버 실행
 
 #### 방법 1: 스크립트 사용 (권장)
-\`\`\`bash
+```bash
 ./start-dev.sh
-\`\`\`
+```
 
 #### 방법 2: 개별 실행
-\`\`\`bash
+```bash
 # 터미널 1: 백엔드 서버
 source venv/bin/activate
 python main.py
@@ -97,7 +97,7 @@ python main.py
 # 터미널 2: 프론트엔드 서버  
 cd frontend
 npm run dev
-\`\`\`
+```
 
 ## 🌐 서비스 접속
 
@@ -123,18 +123,18 @@ npm run dev
 ## 🔧 API 사용 예시
 
 ### 영양성분 계산
-\`\`\`bash
+```bash
 # POST 방식
-curl -X POST http://localhost:8000/calculate-nutrition \\
-     -H "Content-Type: application/json" \\
+curl -X POST http://localhost:8000/calculate-nutrition \
+     -H "Content-Type: application/json" \
      -d '{"food_name": "감자샐러드", "weight_grams": 150}'
 
 # GET 방식 (간편)
 curl http://localhost:8000/calculate-nutrition/감자샐러드/150
-\`\`\`
+```
 
 ### 응답 예시
-\`\`\`json
+```json
 {
   "success": true,
   "message": "영양성분 계산이 성공적으로 완료되었습니다.",
@@ -153,28 +153,28 @@ curl http://localhost:8000/calculate-nutrition/감자샐러드/150
     "potassium": 454.5
   }
 }
-\`\`\`
+```
 
 ## 🧪 테스트
 
 ### 백엔드 테스트
-\`\`\`bash
+```bash
 # API 연결 테스트
 python test_api.py
 
 # 통합 테스트
 python test_integration.py
-\`\`\`
+```
 
 ### 프론트엔드 테스트
-\`\`\`bash
+```bash
 cd frontend
 npm test
-\`\`\`
+```
 
 ## 📁 프로젝트 구조
 
-\`\`\`
+```
 nutrition-db/
 ├── 📦 백엔드 (Python/FastAPI)
 │   ├── api/                 # API 클라이언트
@@ -202,12 +202,12 @@ nutrition-db/
     ├── .env                # 환경변수
     ├── start-dev.sh        # 개발 서버 시작 스크립트
     └── README.md           # 프로젝트 문서
-\`\`\`
+```
 
 ## 🔧 설정 옵션
 
 ### 환경변수 (.env)
-\`\`\`bash
+```bash
 # 공공데이터 API 키
 SERVICE_KEY=your_api_key_here
 
@@ -219,31 +219,31 @@ USE_MOCK_DATA=true        # Mock 데이터 사용 여부
 HOST=0.0.0.0
 PORT=8000
 DEBUG=true
-\`\`\`
+```
 
 ## 🚀 배포
 
 ### Docker 사용
-\`\`\`bash
+```bash
 # TODO: Docker 설정 추가 예정
-\`\`\`
+```
 
 ### 수동 배포
-\`\`\`bash
+```bash
 # 프론트엔드 빌드
 cd frontend
 npm run build
 
 # 백엔드는 main.py 실행
 python main.py
-\`\`\`
+```
 
 ## 🤝 기여하기
 
 1. Fork the Project
-2. Create your Feature Branch (\`git checkout -b feature/AmazingFeature\`)
-3. Commit your Changes (\`git commit -m 'Add some AmazingFeature'\`)
-4. Push to the Branch (\`git push origin feature/AmazingFeature\`)
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## 📝 라이센스
